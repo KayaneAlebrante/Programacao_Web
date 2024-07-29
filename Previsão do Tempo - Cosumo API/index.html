@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="img/5.svg" type="image/png" />
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+    <title>Temperatura Agora</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form">
+            <h3>Confira o Clima de uma Cidade:</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite uma Cidade" id="city-input">
+                <button id="search">
+                    <img id="icon" src="img/1.svg" />
+                </button>
+            </div>
+        </div>
+
+        <div id="weather-data" class="hide">
+            <h2><img id="icon" src="img/2.svg" />
+                <span id="city"></span>
+                <img src="" alt="Bandeira" id="country" />
+            </h2>
+            <p id="temperature"><span></span>&deg;C</p>
+
+            <div id="description-container">
+                <p id="description"></p>
+                <img src="" alt="Condição do Tempo" id="weather-icon" />
+            </div>
+            <div id="details-container">
+                <p id="humidity">
+                    <img id="icon" src="img/3.svg" />
+                    <span>48%</span>
+                </p>
+
+                <p id="wind">
+                    <img id="icon" src="img/4.svg" />
+                    <span>3km/h</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>Desenvolvido com <span><img class="coracao" src="img/coração.png" style="height: 30px;" /></span> por: KaLee
+        </p>
+    </footer>
+</body>
+
+</html>
