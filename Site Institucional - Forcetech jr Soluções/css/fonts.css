@@ -1,0 +1,60 @@
+/* fonts */
+@font-face {
+  font-family: "montserrat-light";
+  src: url("../font/Montserrat-Light.ttf");
+}
+
+.monteserrat-ligt-font{
+  font-family: "montserrat-light";
+} 
+
+@font-face {
+  font-family: "monteserrat-medium";
+  src: url("../font/Montserrat-Medium.ttf");
+}
+
+.monmonteserrat-medium-font{
+  font-family: "monteserrat-mediu";
+} 
+
+@font-face{
+  font-family: "oswald";
+  src: url("../font/Oswald.ttf");
+  }
+
+.oswald-font{
+    font-family: "oswald";  
+}
+
+* h1{
+    font-family: "monteserrat-medium";
+    text-align: center;
+}
+
+* h2{
+    font-family: "monteserrat-medium";
+    font-size: 20pt;
+    text-align: center;
+}
+
+* h3{
+    font-family: "monteserrat-medium";
+    font-size: 18pt;
+    text-align: center;
+}
+
+* h4{
+  font-family: "monteserrat-medium";
+  font-size: 18pt;
+  text-align: center;
+}
+
+* p{
+    font-family: "montserrat-light";
+    font-size: 16pt;
+    text-align: justify;
+}
+
+* a{
+    font-family: "oswald";
+}
