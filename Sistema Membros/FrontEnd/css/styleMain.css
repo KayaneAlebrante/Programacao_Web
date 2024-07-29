@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primaria: #21005E;
+    --Secundaria: #A56CEB;
+    --Fundo: #EFE5FD;
+    --BrancoFt: #F0E6FB;
+    --Branco: #f1f1f1;
+}
+
+*::-webkit-scrollbar {
+    background-color: var(--Secundaria);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--Primaria);
+    border-radius: 20px;
+    border: 3px solid var(--Secundaria);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    border-bottom: #21005E 2px solid;
+    background-color: var(--Branco);
+}
+
+#logo {
+    width: 350px;
+}
+
+#autenticar{
+    background-color: transparent;
+    border: 0;
+}
+
+#autenticar imr{
+    height: 80px;
+}
+
+/*Main*/
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 500px;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--Fundo);
+}
+
+.btn {
+    background-color: var(--Primaria);
+    border: var(--Primaria);
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--Branco);
+}
+
+#form-header, #tableMembros-header{
+    width: 100%;
+    background-color: var(--Primaria);
+    color: var(--Branco);
+    height: 10%;
+    padding: 10px;
+}
+
+/*Form*/
+form{
+    width: 85%;
+    margin: 1rem;
+    margin-left: 8%;
+}
+
+#cadastro input{
+    margin: 5px;
+}
+
+#cadastrarMembro{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#salvar{
+    width: 75%;
+    margin-left: 10%;
+}
+
+/* Table */
+.divTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin: 10px; 
+}
+
+table {
+    display: inline-block;
+    flex-direction: column;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#table-body{
+    width: 90Vw;
+    overflow-x: scroll;
+    margin: 5%;
+}
+
+.divTable::-webkit-scrollbar {
+    width: 12px;
+    background-color: whitesmoke;
+}
+
+.divTable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+
+
+thead {
+    background-color: var(--Fundo);
+}
+
+tr {
+    border-bottom: 1px solid rgb(130, 119, 151);
+    background-color: var(--Branco);
+}
+
+tbody tr td {
+    vertical-align: text-top;
+    padding: 6px;
+    width: 250px; 
+}
+
+thead tr th {
+    padding: 5px;
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+tbody tr {
+    margin-bottom: 50px;
+}
+
+#editar, #excluir{
+    width: 50px;
+    background-color: transparent;
+    border: 0px;
+}
+
+#editar img, #excluir img{
+    width: 50px;
+}
+
+.btn:hover, #openM1:hover{
+    background-color: var(--Secundaria);
+    color: var(--Primaria);
+}
+
+.btn:active, #openM1:active {
+    background-color: var(--Primaria);
+    color: var(--Branco);
+}
+
+/*Rodapé*/
+#footer {
+    color: var(--Branco);
+    background-color: var(--Primaria);
+    min-height: 80px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .coracao {
+    animation: pulse 0.7s infinite;
+    animation-direction: alternate;
+    animation-name: pulse;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 670px) {
+    #logo {
+        width: 55%;
+    }
+    #nav{
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 95%;
+    }
+
+    #table-body{
+        height: 50vw;
+    }
+
+    thead tr th.acao {
+        width: auto;
+    }
+
+    td button i {
+        font-size: 20px;
+    }
+
+    td button i:first-child {
+        margin-right: 0;
+    }
+}

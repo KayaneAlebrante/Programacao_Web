@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primaria: #21005E;
+    --Secundaria: #A56CEB;
+    --BrancoFt: #F0E6FB;
+    --Branco: #f1f1f1;
+    overflow: hidden;
+}
+
+/* Tela Login*/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Primaria);
+}
+
+#main-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 45%;
+    width: 55%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f1f1f1c2;
+    width: 95%;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.btn {
+    background-color: var(--Primaria);
+    border: var(--Primaria);
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--Branco);
+}
+
+.btn:hover {
+    background-color: var(--Secundaria);
+    color: var(--Primaria);
+}
+
+#button:active {
+    background-color: var(--Primaria);
+    color: var(--Branco);
+}
+
+.form-floating {
+    width: 100%;
+}
+
+#logoForm {
+    width: 65%;
+    margin: 1rem;
+}
+
+/*Rodapé*/
+#footer {
+    margin-top: 5%;
+    color: var(--Branco);
+}
+
+#footer .coracao {
+    animation: pulse 0.7s infinite;
+    animation-direction: alternate;
+    animation-name: pulse;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}

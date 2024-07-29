@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+
+    <link type="text/css" href="css/styleMain.css" rel="stylesheet" />
+
+    <link rel="icon" href="img/Logo_Marca.png" type="image/png" />
+
+    <title>Home - Forcetech jr</title>
+</head>
+
+<body>
+    <header id="nav">
+        <img src="img/Logo_Inteira.png" alt="Logo Marca" id="logo" />
+        <button id="autenticar"><img src="img/autenticar.png" style="width: 20%;" /></button>
+
+    </header>
+
+
+    <main id="main">
+        <div id="cadastrarMembro" class="hide">
+            <div id="form-header">
+                <h3>Adicionar Membro</h3>
+            </div>
+
+            <div id="form-body">
+                <form id="cadastro">
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="cad-nome" placeholder="Nome Completo" name="nome" autocomplete="on">
+                        <label for="cad-nome">Nome Completo</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="cad-email" placeholder="e-mail Membro" name="email" autocomplete="on">
+                        <label for="cad-email">E-mail</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="date" class="form-control" id="cad-dataFiliacao" placeholder="Data da Filiação"
+                            name="dataFiliacao" autocomplete="on">
+                        <label for="cad-dataFiliacao">Data Filiação</label>
+                    </div>
+
+                    <button id="salvar" class="btn">salvar!</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="divTable">
+            <div id="tableMembros-header">
+                <h3>Membros Cadastrados</h3>
+            </div>
+            <div id="table-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Data da Filiação</th>
+                            <th class="acao">Editar</th>
+                            <th class="acao">Excluir</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyMembros">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <p>Desenvolvido com <span><img class="coracao" src="img/coracao.png" style="height: 30px;" /></span>
+            por:
+            KaLee
+        </p>
+    </footer>
+</body>
+
+</html>
