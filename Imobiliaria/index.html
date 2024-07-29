@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script src="js/modalJade.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="img/icon.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Monoline - Imobiliária</title>
+</head>
+
+<body>
+    <header class="menu">
+        <img src="img/logomarca.png" class="logo" />
+
+        <div class="buttons">
+            <button name="adicionar" type="button" class="btbOpenModal" id="adicionarCs">Casa</button>
+
+
+            <button name="adicionar" type="button" class="btbOpenModal" id="adicionarAp">Apartamento</button>
+        </div>
+    </header>
+
+    <main class="container-fluid" id="main">
+        <div id="fade" class="hide"></div>
+
+        <div id="modal_1" class="hide">
+            <div id="modal-header">
+                <h3>Adiciona Casa</h3>
+                <button id="fecharCs">Fechar</button>
+            </div>
+            <div id="modal-body">
+                <form id="casa">
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="titulo" placeholder="Título Imóvel" name="titulo">
+                        <label for="titulo" id="m-titulo">Título Casa</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="endereco" placeholder="Endereço" name="endereco">
+                        <label for="endereco" id="m-endereco">Endereço</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="caracteristicas" placeholder="Características">
+                        <label for="caracteristicas" id="m-caracteristicas">Características</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="preco" placeholder="Preço" name="preco">
+                        <label for="preco" id="m-preco">Preço</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="imagem" placeholder="Link Imagem" name="imagem">
+                        <label for="imagem" id="m-imagem">Imagem</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="areat" placeholder="Área Terreno"
+                            name="areaTerreno">
+                        <label for="areat" id="m-areat">Área do Terreno</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="areac" placeholder="Área Construída"
+                            name="areaConstruida">
+                        <label for="areac" id="m-areac">Área Construída</label>
+                    </div>
+                    <button id="salvarCs">Salvar!</button>
+                </form>
+
+            </div>
+        </div>
+
+
+        <div id="modal_2" class="hide">
+            <div id="modal-header">
+                <h3>Adicionar Apartamento</h3>
+                <button id="fecharAp">Fechar</button>
+            </div>
+            <div id="modal-body">
+                <form id="ap">
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="tituloAp" placeholder="Título Imóvel">
+                        <label for="tituloAp" id="m-titulo">Título Apartamento</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="enderecoAp" placeholder="Endereço">
+                        <label for="enderecoAp" id="m-endereco">Endereço</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="caracteristicasAp" placeholder="Características">
+                        <label for="caracteristicasAp" id="m-caracteristicas">Características</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="precoAp" placeholder="Preço">
+                        <label for="precoAp" id="m-preco">Preço</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="imagemAp" placeholder="Link Imagem" name="imagem">
+                        <label for="imagemAp" id="m-imagem">Imagem</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="metragemAp" placeholder="Metragem">
+                        <label for="metragemAp" id="m-metragem">Metragem</label>
+                    </div>
+
+                    <div class="form-floating sm">
+                        <input type="text" class="form-control" id="condominioAp" placeholder="Condomínio">
+                        <label for="condominioAp" id="m-condominio">Condomínio</label>
+                    </div>
+
+                    <button id="salvarAp">Salvar!</button>
+                </form>
+
+            </div>
+        </div>
+
+        <section class="row" id="imoveis"></section>
+        
+    </main>
+    <footer id="footer">
+        <p>Desenvolvido com <span><img class="coracao" src="img/coracao.png" style="height: 30px;" /></span> por: KaLee
+        </p>
+    </footer>
+</body>
+
+</html>

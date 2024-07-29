@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primaria: #236063;
+    --Secundaria: #FAECD9;
+    --Terciaria: #C9B491;
+    --CianoClaro: #3E797C;
+    --Branco: #f1f1f1;
+}
+
+/*Geral*/
+
+#main {
+    padding: 25px;
+    min-height: 500px;
+}
+
+/*Fade */
+
+#fade,
+#modal_1,
+#modal_2 {
+    transition: .5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #23606373;
+    z-index: 5;
+}
+
+#modal_1,
+#modal_2 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--CianoClaro);
+    color: var(--Primaria);
+    z-index: 10;
+    width: 70%;
+    min-height: 500px;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+#modal_1 h3,
+.texto-imagem,
+#modal_2 h3,
+.texto-imagem {
+    color: var(--Branco);
+}
+
+
+#modal_1 #modal-header,
+#modal_2 #modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--CianoClaro);
+    margin: 1rem;
+}
+
+#modal-body {
+    margin-bottom: 1rem;
+}
+
+#modal_1.hide,
+#modal_2.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal_1.hide,
+#modal_2.hide {
+    top: 0;
+}
+
+#casa .form-floating,
+#ap .form-floating{
+    margin: 8px;
+}
+
+.row{    
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: row;
+    height: 35%;
+    width: 40%;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 0.625rem;
+    text-align: justify;
+    text-indent: 0.938rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCard{
+    height: 200px;
+    border-radius: 10px;
+}
+
+.cardCard{
+    width: 35%;
+    border-radius: 15px;
+}
+
+.card:hover{
+    border: 2px solid var(--Primaria);
+}
+
+/* Header */
+.menu {
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px #236063 solid;
+    box-shadow: 0 0 1rem #236063;
+}
+
+.menu .logo {
+    height: 12rem;
+}
+
+button {
+    padding: 0.313rem;
+    border-color: var(--Primaria);
+    border-radius: 1.563rem;
+    background-color: var(--Secundaria);
+    text-align: center;
+    color: black;
+    margin: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+/* Rodapé */
+#footer {
+    display: flex;
+    height: 15%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Terciaria);
+    padding-top: 0.938rem;
+}
+
+#footer .coracao {
+    animation: pulse 0.7s infinite;
+    animation-direction: alternate;
+    animation-name: pulse;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 20rem) {
+    .menu{
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+        flex-direction:column;
+    }
+  }
