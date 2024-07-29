@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js" defer></script>
+    <link rel="icon" href="img/icon.png" type="image/png" />
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+    <title>ReacadosReach</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo Marca.png" />
+    </header>
+    <div class="azul"></div>
+
+    <main class="container-fluid">
+        <form class="d-grid gap-3">
+            <div class="form-floating">
+                <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Título do Recado">
+                <label for="tituloForm">Título do Recado</label>
+            </div>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Digite o Recado" name="recado" id="recadoForm"
+                    style="height: 100px"></textarea>
+                <label for="recadoForm">Digite o Recado</label>
+            </div>
+
+            <button name="enviar" type="button" id="enviar">Enviar!</button>
+        </form>
+
+        <section class="row" id="recados">
+        </section>
+    </main>
+
+    <div class="azul"></div>
+    <footer id="footer">
+        <p>Desenvolvido com <span><img class="coracao" src="img/coracao.png" style="height: 30px;" /></span> por: KaLee
+        </p>
+    </footer>
+</body>
+
+</html>

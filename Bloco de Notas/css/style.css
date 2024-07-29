@@ -1,0 +1,124 @@
+/*Estilo Geral*/
+main {
+  background-color: #faf4df;
+  min-height: 85vh;
+  padding: 1.25rem;
+}
+
+@media (max-width: 48rem) {
+  main {
+    min-height: auto;
+    padding: 0.625;
+  }
+}
+
+form {
+  padding: 1.563rem;
+}
+
+.recado {
+  height: 35%;
+  width: 15.625rem;
+  border: 0.125rem solid #2b70e4;
+  background: #fdfdfd;
+  border-radius: 1.563rem;
+  margin: 0.625rem;
+  text-align: justify;
+  text-indent: 0.938rem;
+  transition: linear;
+}
+
+.recado:hover {
+  box-shadow: 0.313rem 0.125rem 0.125rem #2b6fe441;
+}
+
+.recado .titulo {
+  text-align: center;
+}
+
+/*Botões*/
+button {
+  margin: auto;
+  margin-top: 0.313rem;
+  margin-bottom: 0.313rem;
+  padding: 0.313rem;
+  border-color: #2b70e4;
+  border-radius: 1.563rem;
+  background-color: aliceblue;
+  text-align: center;
+  color: black;
+  width: 65%;
+}
+
+.remover,
+.editar {
+  width: 100%;
+}
+
+.remover {
+  border-color: #ff3131;
+  transition: 0.9s;
+}
+
+.remover:hover {
+  background-color: #ff31318f;
+}
+
+.editar {
+  border-color: #209d5c;
+  transition: 0.9s;
+}
+
+.editar:hover {
+  background-color: #209d5c8f;
+}
+
+.row {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/*Header*/
+header {
+  display: flex;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd034;
+}
+
+header img {
+  width: 15.625rem;
+}
+
+.azul {
+  background-color: #2b70e4;
+  height: 0.125rem;
+}
+
+/* Rodapé */
+#footer {
+  display: flex;
+  height: 15%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd034;
+  padding-top: 0.938rem;
+}
+
+#footer .coracao {
+  animation: pulse 0.7s infinite;
+  animation-direction: alternate;
+  animation-name: pulse;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
